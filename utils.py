@@ -64,8 +64,8 @@ guess_overrides = [
          'likelihood_ratio_clipping': .2,
          'net.activation': 'tanh',
          'net.depth_mid': 3,
-         'net.depth_post': 2,
-         'net.dropout': 0.5,
+         'net.depth_post': 1,
+         'net.dropout': .001,
          'net.funnel': True,
          'net.l1': 7.,  # this exeeds threshold, so it's "off"
          'net.l2': 2.,
@@ -73,13 +73,13 @@ guess_overrides = [
          'net.type': 'conv2d',
          'net.width': 8,
          'net.window': 1,
-         'optimization_steps': 15,
+         'optimization_steps': 20,
          'pct_change': False,
          'punish_repeats': 20000,
          'scale': True,
-         'step_optimizer.learning_rate': 6.5,
+         'step_optimizer.learning_rate': 3.,
          'step_optimizer.type': 'adam',
          'step_window': 250,
-         'single_action': False},
+         'single_action': True},
     ]
 ]
